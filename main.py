@@ -394,13 +394,6 @@ def home(request):
         return Response(status=204, headers=headers)
 
     token = request.headers.get('Authorization')
-    if not token:
-        if request.method == 'GET':
-            if request.path == "/download":
-                # Retrieve Firestore data and send as JSON file
-                return download_firestore_collection()
-        return Response(json.dumps({"error": "Authentication token is missing."}), status=400, mimetype='application/json', headers=headers)
-
     if token.startswith("Bearer "):
         token = token[7:]
 
