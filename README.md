@@ -13,7 +13,7 @@ A Google Cloud Run backend service for a German language learning application th
 
 ## Frontend
 
-The frontend for this application is available at: https://github.com/flame-cai/french_AI_bot
+The frontend for this application is available at: https://github.com/flame-cai/german_AI_bot
 
 ## Setup
 
